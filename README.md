@@ -1,1 +1,1 @@
-# LAD-CLIP
+# ThyCLIPNet
