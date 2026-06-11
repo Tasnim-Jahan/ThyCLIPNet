@@ -11,14 +11,14 @@ batch_size = 32
 AUGMENTATION_FACTOR = 1
 
 # ✅ Paths (new dataset structure)
-trainval_img_dir = "/kaggle/input/tn3k-thyroid-nodule-region-segmentation-dataset/trainval-image"
+trainval_img_dir = "your dataset"
 
-trainval_mask_dir = "/kaggle/input/tn3k-thyroid-nodule-region-segmentation-dataset/trainval-mask"
+trainval_mask_dir = "your dataset"
 
-test_img_dir = "/kaggle/input/tn3k-thyroid-nodule-region-segmentation-dataset/test-image"
+test_img_dir = "your dataset"
 
-test_mask_dir = "/kaggle/input/tn3k-thyroid-nodule-region-segmentation-dataset/test-mask"
+test_mask_dir = "your dataset"
 
-aug_img_dir = "/kaggle/working/augmented/aug_images"
+aug_img_dir = "your dataset"
 
-aug_mask_dir = "/kaggle/working/augmented/aug_masks"
+aug_mask_dir = "your dataset"
