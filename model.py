@@ -10,13 +10,11 @@ def build_model_with_clip(input_shape, clip_features_shape):
 
     encoder = MobileNetV2(include_top=False, weights="imagenet", input_tensor=image_input, input_shape=input_shape)
 
-    skip1 = Dropout(0.3)(eca_block(encoder.get_layer("block_1_expand_relu").output))  # Reduce dropout in encoder
+    skip1 =(eca(encoder.get_layer("block_1_expand_relu").output))  # Reduce dropout in encoder
 
-    skip2 = Dropout(0.3)(eca_block(encoder.get_layer("block_3_expand_relu").output))
+    skip2 = (eca(encoder.get_layer("block_3_expand_relu").output))
 
-    skip3 = Dropout(0.3)(eca_block(encoder.get_layer("block_6_expand_relu").output))
-
-    encoder_output = Dropout(0.3)(eca_block(encoder.get_layer("block_13_expand_relu").output))  # Reduce dropout in encoder
+    encoder_output = (eca(encoder.get_layer("block_13_expand_relu").output))  # Reduce dropout in encoder
 
 
 
